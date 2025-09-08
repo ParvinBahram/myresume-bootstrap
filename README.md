@@ -39,7 +39,6 @@ cd repository-name
  2- Available in both light and dark modes .
 
 
-
 ## Technologies Used
  Created  with **HTML** , **CSS** ,**JavaScript** , **Bootstrap** .
 
