@@ -65,40 +65,43 @@
   <div class="filtering p-2  d-inline-flex flex-row w-auto gap-4 flex-md-column align-items-center flex-md-shrink-0">
     <div class="category mb-4">
       <div class="dropdown-center">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
     دسته بندی  پروژه ها 
   </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">html-css</a></li>
-    <li><a class="dropdown-item" href="#">javascript</a></li>
-    <li><a class="dropdown-item" href="#">react</a></li>
-    <li><a class="dropdown-item" href="#">tailwind</a></li>
-    <li><a class="dropdown-item" href="#">next</a></li>
-    <li><a class="dropdown-item" href="#">bootstrap</a></li>
-    <li><a class="dropdown-item" href="#">seo</a></li>
+  <ul class="dropdown-menu" id="category-items">
+    <li><a class="dropdown-item" >all</a></li>
+    <li><a class="dropdown-item" >html-css</a></li>
+    <li><a class="dropdown-item" >js</a></li>
+    <li><a class="dropdown-item" >react</a></li>
+    <li><a class="dropdown-item" >tailwind</a></li>
+    <li><a class="dropdown-item" >next</a></li>
+    <li><a class="dropdown-item" >bootstrap</a></li>
+    <li><a class="dropdown-item" >seo</a></li>
   </ul>
 </div>
     </div>
-    <div class="date gap-3">
+    <div class="date gap-3" id="date-filter">
       <div class="">
-        <label for="range1"  class="form-label"> از تاریخ</label>
-        <input type="range"  class="form-range" id="range1">
+        <label for="from-range"  class="form-label"> از تاریخ</label>
+        <span id="from-value" class="float-start"></span>
+        <input type="range"  class="form-range" id="from-range" >
       </div>
       <div class="">
-         <label for="range1" class="form-label"> تا تاریخ</label>
-        <input type="range"  class="form-range" id="range1">
+         <label for="to-range" class="form-label"> تا تاریخ</label>
+         <span id="to-value" class="float-start"></span>
+        <input type="range"  class="form-range" id="to-range">
       </div>
       </div>
-      <div class="status ">
+      <div class="status" id="status-filter">
         <div class="form-check  ">
-        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+        <input class="form-check-input"  id="check-input" type="checkbox" value="" id="checkDefault">
         <label class="form-check-label" for="checkDefault">
         پروژه های انجام شده
         </label>
       </div>
       </div>
   </div>
-  <div class="card-section row row-cols-1 row-cols-md-2 row-cols-lg-3  gy-3 justify-content-center flex-md-row-reverse">
+  <div class="card-section row  gy-3 justify-content-center ">
   </div>
 </div>
 </main>
